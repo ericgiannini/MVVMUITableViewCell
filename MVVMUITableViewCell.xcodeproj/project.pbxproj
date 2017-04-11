@@ -12,6 +12,8 @@
 		99317F4D1E982DEE00AFEE71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99317F4B1E982DEE00AFEE71 /* Main.storyboard */; };
 		99317F4F1E982DEE00AFEE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99317F4E1E982DEE00AFEE71 /* Assets.xcassets */; };
 		99317F521E982DEE00AFEE71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99317F501E982DEE00AFEE71 /* LaunchScreen.storyboard */; };
+		99DEA64E1E982ED7001BC63D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DEA64D1E982ED7001BC63D /* Contact.swift */; };
+		99DEA6501E9832E8001BC63D /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DEA64F1E9832E8001BC63D /* ContactCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		99317F4E1E982DEE00AFEE71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99317F511E982DEE00AFEE71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99317F531E982DEE00AFEE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99DEA64D1E982ED7001BC63D /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = ../Contact.swift; sourceTree = "<group>"; };
+		99DEA64F1E9832E8001BC63D /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,9 @@
 		99317F461E982DEE00AFEE71 /* MVVMUITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				99DEA64D1E982ED7001BC63D /* Contact.swift */,
+				99DEA64F1E9832E8001BC63D /* ContactCell.swift */,
+				994720FD1E9C08D10019D82A /* New Group */,
 				99317F471E982DEE00AFEE71 /* AppDelegate.swift */,
 				99317F491E982DEE00AFEE71 /* ViewController.swift */,
 				99317F4B1E982DEE00AFEE71 /* Main.storyboard */,
@@ -62,6 +69,13 @@
 				99317F531E982DEE00AFEE71 /* Info.plist */,
 			);
 			path = MVVMUITableViewCell;
+			sourceTree = "<group>";
+		};
+		994720FD1E9C08D10019D82A /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99DEA6501E9832E8001BC63D /* ContactCell.swift in Sources */,
+				99DEA64E1E982ED7001BC63D /* Contact.swift in Sources */,
 				99317F4A1E982DEE00AFEE71 /* ViewController.swift in Sources */,
 				99317F481E982DEE00AFEE71 /* AppDelegate.swift in Sources */,
 			);
@@ -297,6 +313,7 @@
 				99317F581E982DEE00AFEE71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
