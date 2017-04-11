@@ -12,10 +12,27 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Create an instance of the UIWindow
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+        
+        // Set the background color of the Window
+        window?.backgroundColor = UIColor.white
+        
+        // Allocate memory for an instance of `UIViewController`
+        let viewController = ViewController()
+        
+        // Set the window’s rootViewController to the instance
+        window!.rootViewController = viewController
+        
+        // Make the window visible
+        window!.makeKeyAndVisible()
+
+        
         return true
     }
 

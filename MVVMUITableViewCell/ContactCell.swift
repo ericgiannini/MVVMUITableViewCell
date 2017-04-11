@@ -28,7 +28,7 @@ class ContactCell: UITableViewCell {
         
         return self.numberLabel
     }()
-
+    
     lazy public var informationLabel: UILabel = {
         
         self.informationLabel = UILabel(frame: CGRect.init(x: self.bounds.size.width - 100, y: 40, width: self.bounds.size.width, height: 20))
@@ -53,17 +53,6 @@ class ContactCell: UITableViewCell {
         [nameLabel, numberLabel, informationLabel].forEach(contentView.addSubview)
         
         
-    }
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        // Initialization code
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
     }
     
     required init?(coder aDecoder: NSCoder) {
