@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(ContactCell.self, forCellReuseIdentifier: ContactCell.identifier)
+        tableView.register(ContactCell.self, forCellReuseIdentifier: ContactCell.cellIdentifier)
         
         // Do any additional setup after loading the view, typically from a nib
         
@@ -58,12 +58,12 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
         
-        
-//        let cell = ContactCell(style: .default, reuseIdentifier: cellIdentifier)
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: ContactCell.identifier, for: indexPath) as! ContactCell
-        
+        guard let cell: ContactCell = tableView.dequeueReusableCell(withIdentifier: ContactCell.cellIdentifier, for: indexPath) as? ContactCell else {
+            let cell = ContactCell(style: .default, reuseIdentifier: ContactCell.cellIdentifier)
+            return cell
+        }
         
         let contact = tableData[indexPath.row]
         

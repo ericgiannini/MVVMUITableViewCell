@@ -10,7 +10,7 @@ import UIKit
 
 class ContactCell: UITableViewCell {
     
-    static let identifier = "tableViewCell"
+    static let cellIdentifier = "tableViewCell"
     
     /* lazy instantiation avoids layoutSubviews in view life cycle dance */
     

@@ -58,7 +58,6 @@
 			children = (
 				99DEA64D1E982ED7001BC63D /* Contact.swift */,
 				99DEA64F1E9832E8001BC63D /* ContactCell.swift */,
-				994720FD1E9C08D10019D82A /* New Group */,
 				99317F471E982DEE00AFEE71 /* AppDelegate.swift */,
 				99317F491E982DEE00AFEE71 /* ViewController.swift */,
 				99317F4E1E982DEE00AFEE71 /* Assets.xcassets */,
@@ -66,13 +65,6 @@
 				99317F531E982DEE00AFEE71 /* Info.plist */,
 			);
 			path = MVVMUITableViewCell;
-			sourceTree = "<group>";
-		};
-		994720FD1E9C08D10019D82A /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
